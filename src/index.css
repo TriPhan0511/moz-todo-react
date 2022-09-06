@@ -106,8 +106,10 @@ body {
 
 .btn__danger {
 	color: #fff;
-	background-color: #ca3c3c;
-	border-color: #bd2130;
+	background-color: grey;
+	border-color: grey;
+	/* background-color: #ca3c3c;
+	border-color: #bd2130; */
 }
 
 .btn__filter {
