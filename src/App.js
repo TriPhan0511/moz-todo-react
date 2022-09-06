@@ -2,23 +2,27 @@ function App(props) {
 	return (
 		<div className='todoapp stack-large'>
 			<h1>TodoMatic</h1>
+
+			{/* Writing out a new task */}
 			<form>
 				<h2 className='label-wrapper'>
-					<label htmlFor='new-todo-input' className='label_lg'>
+					<label htmlFor='new-todo-input' className='label__lg'>
 						What needs to be done?
 					</label>
 				</h2>
 				<input
 					type='text'
 					id='new-todo-input'
-					className='input input_lg'
+					className='input input__lg'
 					name='text'
 					autoComplete='off'
 				/>
-				<button type='submit' className='btn btn_primary btn_lg'>
+				<button type='submit' className='btn btn__primary btn__lg'>
 					Add
 				</button>
 			</form>
+
+			{/* Array of buttons that will be used to filter the tasks */}
 			<div className='filters btn-group stack-exception'>
 				<button type='button' className='btn toggle-btn' aria-pressed='true'>
 					<span className='visually-hidden'>Show </span>
@@ -36,7 +40,11 @@ function App(props) {
 					<span className='visually-hidden'> tasks</span>
 				</button>
 			</div>
+
+			{/* A heading that shows how many tasks remain */}
 			<h2 id='list-heading'>3 tasks remaining</h2>
+
+			{/* List of tasks */}
 			<ul
 				role='list'
 				className='todo-list stack-large stack-exception'
